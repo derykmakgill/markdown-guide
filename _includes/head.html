@@ -1,15 +1,4 @@
 <head>
-  {% if jekyll.environment == "production" %}
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-102240749-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-102240749-1');
-  </script>
-  {% endif %}
 
   <meta charset="utf-8">
   <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
@@ -31,22 +20,22 @@
   <meta name="HandheldFriendly" content="True">
   <meta name="MobileOptimized" content="320">
 
-  <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/assets/css/bootstrap-toc.min.css">
-  <link rel="stylesheet" href="/assets/css/docsearch.min.css">
+  <link rel="stylesheet" href="markdown-guide/assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="markdown-guide/assets/css/bootstrap-toc.min.css">
+  <link rel="stylesheet" href="markdown-guide/assets/css/docsearch.min.css">
 
   {% if page.title == 'Home' or page.title == '404 Not Found' %}
-  <link href="/assets/css/homepage.css" rel="stylesheet">
+  <link href="markdown-guide/assets/css/homepage.css" rel="stylesheet">
   {% else %}
-  <link href="/assets/css/page.css" rel="stylesheet">
+  <link href="markdown-guide/assets/css/page.css" rel="stylesheet">
   {% endif %}
 
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
-  <script src="/assets/javascript/jquery-3.5.1.slim.min.js"></script>
-  <script src="/assets/javascript/bootstrap.bundle.min.js"></script>
-  <script src="/assets/javascript/bootstrap-toc.min.js"></script>
-  <script defer src="/assets/javascript/solid.min.js"></script>
-  <script defer src="/assets/javascript/fontawesome.min.js"></script>
+  <script src="markdown-guide/assets/javascript/jquery-3.5.1.slim.min.js"></script>
+  <script src="markdown-guide/assets/javascript/bootstrap.bundle.min.js"></script>
+  <script src="markdown-guide/assets/javascript/bootstrap-toc.min.js"></script>
+  <script defer src="markdown-guide/assets/javascript/solid.min.js"></script>
+  <script defer src="markdown-guide/assets/javascript/fontawesome.min.js"></script>
   <script async src="https://media.ethicalads.io/media/client/ethicalads.min.js"></script>
 </head>
